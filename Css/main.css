@@ -1,3 +1,6 @@
+*,*::after,*::before{
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   font-family: sans-serif;
@@ -9,7 +12,7 @@ body {
 .section1 {
   width: 100%;
   height: 100vh;
-  background-image: url(./images/hero\ img.jpg);
+  background-image: url(../images/hero\ img.jpg);
   background-size: cover;
   position: relative;
 }
@@ -83,31 +86,32 @@ body {
 
 /*-----------------begining of Section 2-----------------*/
 .section2 {
-  padding: 100px 300px 100px 300px;
+  padding: 20px 20px;
 }
-.card {
+.card-img {
   float: left;
-  width: 50%;
+  width: 100%;
+}
+.card-content{
+  float: right;
+  width: 100%;
 }
 .card-border {
   border: 8px solid rgb(85, 85, 85);
   position: absolute;
-  width: 23%;
-  height: 60%;
   border-radius: 5px;
+
   z-index: 0;
 }
-.card img {
+.card-img img {
   position: relative;
-  max-width: 100%;
-  height: auto;
   top: 25px;
   left: 25px;
   border-radius: 5px;
   z-index: 1;
 }
 
-.card h2 {
+.card-content h2 {
   font-size: 34px;
   color: rgb(51, 51, 51);
   font-weight: 600;
@@ -117,7 +121,7 @@ body {
   padding-left: 10px;
   margin-top: 0;
 }
-.card p {
+.card-content p {
   font-family: "Roboto Serif", serif;
   font-size: 16px;
   font-weight: 400;
@@ -127,11 +131,11 @@ body {
   margin-bottom: 25px;
   padding-bottom: 25px;
 }
-.card ul {
+.card-content ul {
   padding-left: 0;
   display: table;
 }
-.card ul li {
+.card-content ul li {
   list-style: none;
   padding: 10px;
   float: left;
@@ -139,10 +143,10 @@ body {
   line-height: 16px;
   color: rgb(85, 85, 85);
 }
-.card ul li:nth-of-type(4) {
+.card-content ul li:nth-of-type(4) {
   padding-left: 65px;
 }
-.card ul li span {
+.card-content ul li span {
   font-size: 16px;
   font-weight: 600;
   font-family: "Roboto Serif", serif;
@@ -163,12 +167,14 @@ body {
 /*-----------------end of Section 2-----------------*/
 /*-----------------begining of Section 3-----------------*/
 .section3 {
-  padding: 100px 190px 100px 190px;
   background-color: #f1f1f1;
+  padding: 30px 30px ;
 }
-
-.card-item {
-  width: 23%;
+.countainer{
+  width: 90%;
+  margin: 0 auto;
+}
+.card-item {  
   float: left;
   padding: 40px 10px;
   transition: all 0.3s ease-in-out 0s;
@@ -230,9 +236,8 @@ body {
 /*-----------------end of Section 3-----------------*/
 /*-----------------begining of Section 4-----------------*/
 .section4 {
-  padding: 100px 190px 100px 190px;
+ padding: 70px 70px;
 }
-
 .section4 h2 {
   font-size: 36px;
   font-weight: 800;
@@ -266,14 +271,12 @@ body {
 .portfolio-item {
   margin-right: 10px;
   margin-bottom: 10px;
-  width: 31.5%;
-  min-width: 150px;
   float: left;
+  width: 100%;
   position: relative;
 }
 .portfolio-item img {
-  object-fit: cover;
-  max-width: 100%;
+  width: 100%;
 }
 .portfolio-item::before {
   content: "";
