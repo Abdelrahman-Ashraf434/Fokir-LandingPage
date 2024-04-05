@@ -17,8 +17,7 @@ body {
 /*-----------------begining of Section 1-----------------*/
 .section1 {
   height: 100vh;
-  background-image: url(./images/hero\ img.jpg);
-  /**/
+  background-image: url(./images/hero\ img.jpg); /*path changed*/
   background-size: cover;
   position: relative;
 }
